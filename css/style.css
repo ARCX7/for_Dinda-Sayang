@@ -168,8 +168,7 @@ body {
   transform: translate(-50%, -100%);
   width: 8vmin;
   height: 8vmin;
-  /* Sesuaikan warna cahaya di atas bunga jika perlu */
-  background-color: #d19fe8; /* Ungu terang untuk efek cahaya */
+  background-color: #fff;
   filter: blur(10vmin);
 }
 
@@ -177,47 +176,43 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
-  /* Menyesuaikan lebar dan tinggi untuk proporsi tulip yang lebih panjang */
-  width: 10vmin; /* Sedikit lebih lebar */
-  height: 15vmin; /* Lebih tinggi untuk kelopak tulip */
-  /* Bentuk kelopak tulip yang lebih tajam dan tegak */
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Lebih membulat di bagian atas, lebih lurus di bawah */
-  /* Mengubah warna kelopak bunga menjadi ungu */
-  background-color: #8A2BE2; /* Warna ungu yang cantik (Blue Violet) */
-  background-image: linear-gradient(to top, #BA55D3, #8A2BE2 80%); /* Gradien ungu untuk kedalaman, lebih fokus ke bawah */
+  width: 8vmin;
+  height: 11vmin;
+  border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
+  /* Lilac color with white highlight */
+  background-color: #c8a2c8; /* Base lilac color */
+  background-image: linear-gradient(to top, #fff, #e6ace6); /* White highlight to lighter lilac */
   transform-origin: bottom center;
   opacity: 0.9;
-  box-shadow: inset 0 0 2vmin rgba(138, 43, 226, 0.5); /* Mengubah bayangan agar sesuai warna ungu */
+  box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
 }
 
 .flower__leaf--1 {
-  transform: translate(-45%, 1%) rotateY(40deg) rotateX(-55deg) rotateZ(-10deg); /* Menyesuaikan rotasi untuk kelopak depan kiri */
+  transform: translate(-10%, 1%) rotateY(40deg) rotateX(-50deg);
 }
 
 .flower__leaf--2 {
-  transform: translate(-50%, -4%) rotateX(30deg); /* Kelopak tengah, rotasi dasar */
+  transform: translate(-50%, -4%) rotateX(40deg);
 }
 
 .flower__leaf--3 {
-  transform: translate(-55%, 1%) rotateY(-40deg) rotateX(55deg) rotateZ(10deg); /* Menyesuaikan rotasi untuk kelopak depan kanan */
+  transform: translate(-90%, 0%) rotateY(45deg) rotateX(50deg);
 }
 
 .flower__leaf--4 {
-  /* Mengubah ini menjadi kelopak belakang, lebih tinggi dan sempit */
-  width: 7vmin; /* Sedikit lebih sempit */
-  height: 13vmin; /* Lebih tinggi */
-  transform-origin: bottom center; /* Ubah origin ke tengah */
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Bentuk yang sama dengan kelopak lainnya */
-  transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg); /* Rotasi ke belakang, sedikit lebih tinggi */
-  background-image: linear-gradient(to top, rgba(186, 85, 211, 0.4), #8A2BE2); /* Warna gradien ungu */
+  width: 8vmin;
+  height: 8vmin;
+  transform-origin: bottom left;
+  border-radius: 4vmin 10vmin 4vmin 4vmin;
+  transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), #e6ace6); /* Adjusted for lilac */
   z-index: 1;
   opacity: 0.8;
-  -webkit-transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg);
-  -moz-transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg);
-  -ms-transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg);
-  -o-transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg);
+  -webkit-transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
+  -moz-transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
+  -ms-transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
+  -o-transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
 }
-
 
 .flower__white-circle {
   position: absolute;
@@ -226,8 +221,7 @@ body {
   width: 9vmin;
   height: 4vmin;
   border-radius: 50%;
-  /* Mengubah warna lingkaran tengah menjadi kuning/oranye tulip */
-  background-color: #FFD700; /* Warna kuning keemasan */
+  background-color: #fff;
 }
 
 .flower__white-circle::after {
@@ -239,15 +233,13 @@ body {
   width: 60%;
   height: 60%;
   border-radius: inherit;
-  /* Mengubah warna gradien di tengah agar serasi */
-  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(157.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), linear-gradient(90deg, rgb(255, 180, 0), rgb(255, 150, 0)); /* Mengubah warna gradien di tengah ke oranye */
+  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(112.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(22.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(157.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), repeating-linear-gradient(67.5deg, rgba(0, 0, 0, 0.03) 0px, rgba(0, 0, 0, 0.03) 1px, transparent 1px, transparent 12px), linear-gradient(90deg, rgb(255, 235, 18), rgb(255, 206, 0));
 }
 
 .flower__line {
   height: 55vmin;
   width: 1.5vmin;
-  /* Mengubah warna tangkai menjadi hijau */
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(0, 100, 0, 0.2)), linear-gradient(to top, transparent 10%, #32CD32, #228B22); /* Hijau Limau dan Hijau Hutan */
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, #d8bfd8, #d8bfd8); /* Adjusted to lilac stem */
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   animation: grow-flower-tree 4s backwards;
 }
@@ -262,8 +254,7 @@ body {
   height: var(--h);
   border-top-right-radius: var(--h);
   border-bottom-left-radius: var(--h);
-  /* Mengubah warna daun pada tangkai */
-  background-image: linear-gradient(to top, rgba(0, 100, 0, 0.4), #32CD32); /* Hijau gelap dan Hijau Limau */
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), #bb8fce); /* Adjusted to a muted purplish green */
 }
 
 .flower__line__leaf--1 {
@@ -309,16 +300,14 @@ body {
   bottom: 0vmin;
   width: 1vmin;
   height: 1vmin;
-  /* Mengubah warna cahaya menjadi ungu terang */
-  background-color: #DDA0DD; /* Ungu terang (Plum) */
+  background-color: #e6ace6; /* Adjusted for lilac glow */
   border-radius: 50%;
   filter: blur(0.2vmin);
   animation: light-ans 4s linear infinite backwards;
 }
 
 .flower__light:nth-child(odd) {
-  /* Mengubah warna cahaya ganjil juga */
-  background-color: #EE82EE; /* Ungu terang (Violet) */
+  background-color: #fff;
 }
 
 .flower__light--1 {
@@ -362,7 +351,7 @@ body {
 }
 
 .flower__grass {
-  --c: #32CD32; /* Mengubah warna rumput default menjadi hijau */
+  --c: #fff;
   --line-w: 1.5vmin;
   position: absolute;
   bottom: 12vmin;
@@ -411,8 +400,7 @@ body {
   height: var(--size);
   border-top-left-radius: var(--size);
   border-top-right-radius: var(--size);
-  /* Mengubah warna daun rumput */
-  background-image: linear-gradient(to top, transparent, transparent 30%, #228B22); /* Hijau Hutan */
+  background-image: linear-gradient(to top, transparent, transparent 30%, var(--c));
   z-index: 100;
 }
 
@@ -550,7 +538,7 @@ body {
 .flower__g-long {
   --w: 2vmin;
   --h: 6vmin;
-  --c: #32CD32; /* Mengubah warna ini menjadi hijau */
+  --c: #fff;
   position: absolute;
   bottom: 10vmin;
   left: -3vmin;
@@ -563,6 +551,7 @@ body {
 }
 
 @keyframes flower-g-long-ans {
+
   0%,
   100% {
     transform: rotate(-30deg) rotateY(-20deg);
@@ -604,10 +593,9 @@ body {
   width: 30vmin;
   height: 50vmin;
   border-top-left-radius: 100%;
-  /* Mengubah warna daun besar di samping */
-  border-left: 2vmin solid #228B22; /* Hijau Hutan */
+  border-left: 2vmin solid #d8bfd8; /* Adjusted to lilac */
   background-image: linear-gradient(to bottom, transparent, var(--dark-color) 60%);
-  -webkit-mask-image: linear-gradient(to top, transparent 30%, #228B22 60%); /* Mengubah mask juga */
+  -webkit-mask-image: linear-gradient(to top, transparent 30%, #fff 60%);
 }
 
 .flower__g-right--1 {
@@ -627,6 +615,7 @@ body {
 }
 
 @keyframes flower-g-right-ans {
+
   0%,
   100% {
     transform: rotate(20deg);
@@ -638,6 +627,7 @@ body {
 }
 
 @keyframes flower-g-right-ans--2 {
+
   0%,
   100% {
     transform: rotateY(-180deg) rotate(0deg) rotateX(-20deg);
@@ -659,6 +649,7 @@ body {
 }
 
 @keyframes flower__g-front-ans {
+
   0%,
   100% {
     transform: rotate(-28deg) rotateY(30deg) scale(1.04);
@@ -672,8 +663,7 @@ body {
 .flower__g-front__line {
   width: 0.3vmin;
   height: 20vmin;
-  /* Mengubah warna garis depan */
-  background-image: linear-gradient(to top, transparent, #3CB371, transparent 100%); /* Medium Sea Green */
+  background-image: linear-gradient(to top, transparent, #d8bfd8, transparent 100%); /* Adjusted to lilac */
   position: relative;
 }
 
@@ -705,12 +695,6 @@ body {
   top: -8vmin;
   transform: rotateY(-180deg) scale(0.7) !important;
   animation: flower__g-front__leaf-left-ans-2 1s 4.6s ease-in backwards !important;
-}
-
-@keyframes flower__g-front__leaf-left-ans-2 {
-  0% {
-    transform: rotateY(-180deg) scale(0);
-  }
 }
 
 .flower__g-front__leaf-wrapper--3 {
@@ -781,10 +765,9 @@ body {
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
   box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.2);
-  /* Mengubah warna daun depan */
-  background-image: linear-gradient(to bottom left, transparent, var(--dark-color)), linear-gradient(to bottom right, #3CB371 50%, transparent 50%, transparent); /* Medium Sea Green */
-  -webkit-mask-image: linear-gradient(to bottom right, #3CB371 50%, transparent 50%, transparent);
-  mask-image: linear-gradient(to bottom right, #3CB371 50%, transparent 50%, transparent);
+  background-image: linear-gradient(to bottom left, transparent, var(--dark-color)), linear-gradient(to bottom right, #e6ace6 50%, transparent 50%, transparent); /* Adjusted to lilac */
+  -webkit-mask-image: linear-gradient(to bottom right, #e6ace6 50%, transparent 50%, transparent); /* Adjusted to lilac */
+  mask-image: linear-gradient(to bottom right, #e6ace6 50%, transparent 50%, transparent); /* Adjusted to lilac */
 }
 
 .flower__g-fr {
@@ -797,6 +780,7 @@ body {
 }
 
 @keyframes flower__g-fr-ans {
+
   0%,
   100% {
     transform: rotate(2deg);
@@ -815,9 +799,8 @@ body {
   width: 30vmin;
   height: 50vmin;
   border-top-left-radius: 100%;
-  /* Mengubah warna daun latar depan */
-  border-left: 2vmin solid #228B22; /* Hijau Hutan */
-  -webkit-mask-image: linear-gradient(to top, transparent 25%, #228B22 50%);
+  border-left: 2vmin solid #d8bfd8; /* Adjusted to lilac */
+  -webkit-mask-image: linear-gradient(to top, transparent 25%, #fff 50%);
   position: relative;
   z-index: 1;
 }
@@ -830,9 +813,8 @@ body {
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
   box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.2);
-  /* Mengubah warna daun kecil di latar depan */
-  background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%), linear-gradient(to bottom right, #3CB371 45%, transparent 50%, transparent);
-  -webkit-mask-image: linear-gradient(135deg, #3CB371 40%, transparent 50%, transparent);
+  background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%), linear-gradient(to bottom right, #e6ace6 45%, transparent 50%, transparent); /* Adjusted to lilac */
+  -webkit-mask-image: linear-gradient(135deg, #e6ace6 40%, transparent 50%, transparent); /* Adjusted to lilac */
 }
 
 .flower__g-fr__leaf--1 {
@@ -938,7 +920,7 @@ body {
 }
 
 .long-g--1 .leaf {
-  -webkit-mask-image: linear-gradient(to top, transparent 40%, #228B22 80%) !important; /* Mengubah mask */
+  -webkit-mask-image: linear-gradient(to top, transparent 40%, #fff 80%) !important;
 }
 
 .long-g--1 .leaf--1 {
@@ -958,7 +940,7 @@ body {
 
 .long-g--2 .leaf,
 .long-g--3 .leaf {
-  -webkit-mask-image: linear-gradient(to top, transparent 50%, #228B22 80%) !important; /* Mengubah mask */
+  -webkit-mask-image: linear-gradient(to top, transparent 50%, #fff 80%) !important;
 }
 
 .long-g--2 .leaf--1,
@@ -973,7 +955,7 @@ body {
 }
 
 .long-g--3 .leaf {
-  -webkit-mask-image: linear-gradient(to top, transparent 40%, #228B22 80%) !important; /* Mengubah mask */
+  -webkit-mask-image: linear-gradient(to top, transparent 40%, #fff 80%) !important;
 }
 
 .long-g--4 {
@@ -984,7 +966,7 @@ body {
 }
 
 .long-g--4 .leaf {
-  -webkit-mask-image: linear-gradient(to top, transparent 50%, #228B22 80%) !important; /* Mengubah mask */
+  -webkit-mask-image: linear-gradient(to top, transparent 50%, #fff 80%) !important;
 }
 
 .long-g--5 {
@@ -1013,14 +995,14 @@ body {
 .long-g .leaf {
   --w: 15vmin;
   --h: 40vmin;
-  --c: #1aaa15; /* Mengubah warna default daun panjang menjadi hijau */
+  --c: #9370db; /* Adjusted to a purplish green for grass */
   position: absolute;
   bottom: 0;
   width: var(--w);
   height: var(--h);
   border-top-left-radius: 100%;
   border-left: 2vmin solid var(--c);
-  -webkit-mask-image: linear-gradient(to top, transparent 20%, #228B22); /* Mengubah mask */
+  -webkit-mask-image: linear-gradient(to top, transparent 20%, var(--dark-color));
   transform-origin: bottom center;
 }
 
@@ -1056,6 +1038,7 @@ body {
 }
 
 @keyframes leaf-ans-1 {
+
   0%,
   100% {
     transform: rotate(-5deg) scale(1);
@@ -1067,6 +1050,7 @@ body {
 }
 
 @keyframes leaf-ans-2 {
+
   0%,
   100% {
     transform: rotateY(-180deg) rotate(5deg);
@@ -1078,6 +1062,7 @@ body {
 }
 
 @keyframes leaf-ans-3 {
+
   0%,
   100% {
     transform: rotate(-10deg) rotateY(-180deg);
@@ -1129,6 +1114,7 @@ body {
 }
 
 @keyframes moving-flower-1 {
+
   0%,
   100% {
     transform: rotate(2deg);
@@ -1140,6 +1126,7 @@ body {
 }
 
 @keyframes moving-flower-2 {
+
   0%,
   100% {
     transform: rotate(18deg);
@@ -1151,6 +1138,7 @@ body {
 }
 
 @keyframes moving-flower-3 {
+
   0%,
   100% {
     transform: rotate(-18deg);
@@ -1189,6 +1177,7 @@ body {
 }
 
 @keyframes moving-grass {
+
   0%,
   100% {
     transform: rotate(-48deg) rotateY(40deg);
@@ -1200,6 +1189,7 @@ body {
 }
 
 @keyframes moving-grass--2 {
+
   0%,
   100% {
     transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
