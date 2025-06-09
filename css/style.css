@@ -177,45 +177,47 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 8vmin;
-  height: 11vmin;
-  /* Bentuk kelopak tulip yang lebih tajam di bagian atas */
-  border-radius: 40% 40% 50% 50%; /* Mengubah bentuk kelopak menjadi lebih mirip tulip */
+  /* Menyesuaikan lebar dan tinggi untuk proporsi tulip yang lebih panjang */
+  width: 10vmin; /* Sedikit lebih lebar */
+  height: 15vmin; /* Lebih tinggi untuk kelopak tulip */
+  /* Bentuk kelopak tulip yang lebih tajam dan tegak */
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Lebih membulat di bagian atas, lebih lurus di bawah */
   /* Mengubah warna kelopak bunga menjadi ungu */
   background-color: #8A2BE2; /* Warna ungu yang cantik (Blue Violet) */
-  background-image: linear-gradient(to top, #BA55D3, #8A2BE2); /* Gradien ungu untuk kedalaman */
+  background-image: linear-gradient(to top, #BA55D3, #8A2BE2 80%); /* Gradien ungu untuk kedalaman, lebih fokus ke bawah */
   transform-origin: bottom center;
   opacity: 0.9;
   box-shadow: inset 0 0 2vmin rgba(138, 43, 226, 0.5); /* Mengubah bayangan agar sesuai warna ungu */
 }
 
 .flower__leaf--1 {
-  transform: translate(-10%, 1%) rotateY(30deg) rotateX(-45deg); /* Sedikit penyesuaian rotasi */
+  transform: translate(-45%, 1%) rotateY(40deg) rotateX(-55deg) rotateZ(-10deg); /* Menyesuaikan rotasi untuk kelopak depan kiri */
 }
 
 .flower__leaf--2 {
-  transform: translate(-50%, -4%) rotateX(30deg); /* Sedikit penyesuaian rotasi */
+  transform: translate(-50%, -4%) rotateX(30deg); /* Kelopak tengah, rotasi dasar */
 }
 
 .flower__leaf--3 {
-  transform: translate(-90%, 0%) rotateY(30deg) rotateX(45deg); /* Sedikit penyesuaian rotasi */
+  transform: translate(-55%, 1%) rotateY(-40deg) rotateX(55deg) rotateZ(10deg); /* Menyesuaikan rotasi untuk kelopak depan kanan */
 }
 
 .flower__leaf--4 {
-  width: 8vmin;
-  height: 8vmin;
-  transform-origin: bottom left;
-  /* Menyesuaikan bentuk kelopak bawah jika diperlukan */
-  border-radius: 4vmin 10vmin 4vmin 4vmin;
-  transform: translate(0%, 18%) rotateX(60deg) rotate(-40deg); /* Sedikit penyesuaian rotasi */
+  /* Mengubah ini menjadi kelopak belakang, lebih tinggi dan sempit */
+  width: 7vmin; /* Sedikit lebih sempit */
+  height: 13vmin; /* Lebih tinggi */
+  transform-origin: bottom center; /* Ubah origin ke tengah */
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Bentuk yang sama dengan kelopak lainnya */
+  transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg); /* Rotasi ke belakang, sedikit lebih tinggi */
   background-image: linear-gradient(to top, rgba(186, 85, 211, 0.4), #8A2BE2); /* Warna gradien ungu */
   z-index: 1;
   opacity: 0.8;
-  -webkit-transform: translate(0%, 18%) rotateX(60deg) rotate(-40deg);
-  -moz-transform: translate(0%, 18%) rotateX(60deg) rotate(-40deg);
-  -ms-transform: translate(0%, 18%) rotateX(60deg) rotate(-40deg);
-  -o-transform: translate(0%, 18%) rotateX(60deg) rotate(-40deg);
+  -webkit-transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg);
+  -moz-transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg);
+  -ms-transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg);
+  -o-transform: translate(-50%, 5%) rotateX(-5deg) rotateZ(180deg);
 }
+
 
 .flower__white-circle {
   position: absolute;
